@@ -52,7 +52,7 @@ public class CollectionTestSuite {
         //Given
         OddNumbersExterminator oddNumbersExterminator = new OddNumbersExterminator();
         List<Integer> numbersList = new ArrayList<>(Arrays.asList(1,2,4,7,8,12,44,66,5,4,3));
-
+        List<Integer> testList = new ArrayList<>(numbersList);
         System.out.println(numbersList.toString());
         //When
         oddNumbersExterminator.exterminate(numbersList);
@@ -61,8 +61,10 @@ public class CollectionTestSuite {
         //Then
 
         Assertions.assertNotNull(numbersList);
-        Assertions.assertEquals((numbersList.get(0) % 2), 0);
-        Assertions.assertEquals((numbersList.get(1) % 2), 0);
+        Assertions.assertNotEquals(numbersList , testList);
+        Assertions.assertNotEquals(numbersList.get(4) , testList.get(4));
+        Assertions.assertTrue(numbersList.get(5)%2==0);
+
 
 
 
