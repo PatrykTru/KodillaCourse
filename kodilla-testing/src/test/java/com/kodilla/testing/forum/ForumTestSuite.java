@@ -36,6 +36,7 @@ public class ForumTestSuite {
         System.out.println("Testing " + result);
         //Then
         Assertions.assertEquals("John Smith" , result);
+
     }
 
     @DisplayName(
