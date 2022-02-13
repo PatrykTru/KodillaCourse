@@ -65,11 +65,6 @@ public class CollectionTestSuite {
         Assertions.assertNotEquals(numbersList.get(4) , testList.get(4));
         Assertions.assertTrue(numbersList.get(5)%2==0);
 
-
-
-
-
-
     }
 
 
