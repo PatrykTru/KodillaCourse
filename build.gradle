@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'com.kodilla'
+version '1.0-SNAPSHOT'
+sourceCompatibility ='14'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+}
+
+test {
+
+    useJUnitPlatform()
+}
