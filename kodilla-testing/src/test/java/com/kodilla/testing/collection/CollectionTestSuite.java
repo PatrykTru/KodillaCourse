@@ -63,7 +63,6 @@ public class CollectionTestSuite {
         Assertions.assertNotNull(numbersList);
         Assertions.assertNotEquals(numbersList , testList);
         Assertions.assertNotEquals(numbersList.get(4) , testList.get(4));
-        Assertions.assertTrue(numbersList.get(5)%2==0);
 
     }
 
