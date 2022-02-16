@@ -52,6 +52,7 @@ public class ShapeCollectorTestSuite {
 
         }
 
+
         @Test
         void showFiguresTest() {
             //Given

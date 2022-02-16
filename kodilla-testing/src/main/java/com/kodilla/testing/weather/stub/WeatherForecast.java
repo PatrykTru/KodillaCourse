@@ -38,10 +38,12 @@ public class WeatherForecast {
         }
         Collections.sort(temperaturesList);
 
-        if(temperaturesList.size()%2==0)
+        if(temperaturesList.size()%2==0){
             mediana = temperaturesList.get((temperaturesList.size()-1)/2+1);
-        else
-            mediana =  temperaturesList.get((temperaturesList.size()-1)/2);
+        }
+        else {
+            mediana = temperaturesList.get((temperaturesList.size() - 1) / 2);
+        }
 
         return mediana;
 

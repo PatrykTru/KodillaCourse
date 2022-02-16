@@ -11,29 +11,30 @@ public class ShapeCollector {
 
     void addFigure(Shape shape){
 
-        if(shape != null)
+        if(shape != null) {
             shapes.add(shape);
+        }
 
     }
     boolean removeFigure(Shape shape){
         boolean result = false;
+
         if(shapes.contains(shape)) {
             shapes.remove(shape);
             result = true;
         }
-
-    return result;
+         return result;
     }
+
     Shape getFigure(int n){
 
-        if(n<=shapes.size())
-           return shapes.get(n);
-
+        if(n<=shapes.size()) {
+            return shapes.get(n);
+        }
 
     return null;
     }
     String showFigures(){
-
         String figures = "";
 
         if(shapes.size()>0) {

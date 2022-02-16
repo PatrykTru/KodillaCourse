@@ -29,9 +29,6 @@ public class WeatherForecastTestSuite {
         temperaturesMap.put("Rzeszow", 25.5);
         temperaturesMap.put("Gdansk", 26.1);
         temperaturesMap.put("Krakow", 26.2);
-
-
-
     }
 
     @Test
@@ -54,9 +51,8 @@ public class WeatherForecastTestSuite {
         Double average = weatherForecast.calculateForecastAverage();
         //Then
         Assertions.assertEquals(25.56,average);
-
-
     }
+
     @Test
     void calculateMedianaWithMock() {
         //Given
@@ -66,7 +62,5 @@ public class WeatherForecastTestSuite {
         Double average = weatherForecast.calculateForecastMediana();
         //Then
         Assertions.assertEquals(25.5,average);
-
-
     }
 }
