@@ -142,4 +142,28 @@ public class StatisticsTestSuite {
 
 
     }
+
+    @Test
+    void calculateAdvStatisticsAveragesCountingTest() {
+
+        //Given
+        Stats stats = new Stats();
+        stats.postCount = 12;
+        stats.commentsCount =3;
+        List<String> testUsers = generateListOfUsers(5);
+        when(statisticsMock.usersNames()).thenReturn(testUsers);
+        when(statisticsMock.postsCount()).thenReturn(stats.postCount);
+        when(statisticsMock.commentsCount()).thenReturn(stats.commentsCount);
+
+        //When
+        stats.calculateAdvStatistics(statisticsMock);
+
+        //Then
+
+        assertEquals(2.4 , stats.averagePostsPerUser);
+        assertEquals(0.6 , stats.averageCommentsPerUser);
+        assertEquals(0.25 , stats.averageCommentsPerPost);
+
+
+    }
 }

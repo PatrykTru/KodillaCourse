@@ -13,18 +13,18 @@ public class Stats {
         commentsCount = statistics.commentsCount();
 
         if(postCount>0 && usersCount>0){
-            averagePostsPerUser = statistics.postsCount()/usersCount;}
+            averagePostsPerUser = postCount/(double)usersCount;}
         else {
             averagePostsPerUser  = 0;}
 
         if(commentsCount>0 && usersCount>0){
-            averageCommentsPerUser = statistics.commentsCount()/usersCount;}
+            averageCommentsPerUser = commentsCount/(double)usersCount;}
         else {
             averageCommentsPerUser = 0;
         }
 
         if(postCount>0 && commentsCount>0){
-            averageCommentsPerPost = statistics.commentsCount()/statistics.postsCount();}
+            averageCommentsPerPost = commentsCount/(double)postCount ;}
         else {
             averageCommentsPerPost = 0;
         }
