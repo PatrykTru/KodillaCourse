@@ -42,6 +42,8 @@ com/kodilla/stream/invoice/simple/SimpleProduct.java
  com.kodilla.stream.invoice.simple.SimpleProduct
 com/kodilla/stream/forumuser/ForumUser.java
  com.kodilla.stream.forumuser.ForumUser
+com/kodilla/stream/world/World.java
+ com.kodilla.stream.world.World
 com/kodilla/stream/sand/SandStorage.java
  com.kodilla.stream.sand.SandStorage
 com/kodilla/stream/sand/Asia.java
@@ -54,5 +56,5 @@ com/kodilla/stream/world/Continent.java
  com.kodilla.stream.world.Continent
 com/kodilla/stream/book/Book.java
  com.kodilla.stream.book.Book
-com/kodilla/stream/world/World.java
- com.kodilla.stream.world.World
+com/kodilla/stream/array/ArrayOperations.java
+ com.kodilla.stream.array.ArrayOperations
