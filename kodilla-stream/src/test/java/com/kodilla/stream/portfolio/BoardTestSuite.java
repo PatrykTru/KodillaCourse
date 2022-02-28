@@ -78,12 +78,14 @@ public class BoardTestSuite {
                 .collect(Collectors.toList());
 
         double average = (IntStream.range(0 , taskDays.size())
-                .sum())/taskDays.size();
+                .map(s -> taskDays.get(s))
+                .sum());
+        average = average/taskDays.size();
 
 
 
         //Then
-        assertEquals(2.0 , average);
+        assertEquals(14.166666666666666 , average);
     }
 
     private Board prepareTestData() {
