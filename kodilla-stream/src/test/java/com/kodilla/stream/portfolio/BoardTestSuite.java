@@ -73,6 +73,7 @@ public class BoardTestSuite {
 
         List<Integer> taskDays = project.getTaskLists().stream()
                 .flatMap(f -> f.getTasks().stream())
+                .filter(t-> t.getDeadline().isAfter(LocalDate.now()))
                 .map(task ->  task.getCreated())
                 .map(d -> d.until(LocalDate.now()).getDays())
                 .collect(Collectors.toList());
@@ -85,7 +86,7 @@ public class BoardTestSuite {
 
 
         //Then
-        assertEquals(14.166666666666666 , average);
+        assertEquals(12.5 , average);
     }
 
     private Board prepareTestData() {
