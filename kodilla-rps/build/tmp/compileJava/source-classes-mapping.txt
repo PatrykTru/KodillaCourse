@@ -1,0 +1,2 @@
+com/kodilla/rps/RpsRunner.java
+ com.kodilla.rps.RpsRunner
