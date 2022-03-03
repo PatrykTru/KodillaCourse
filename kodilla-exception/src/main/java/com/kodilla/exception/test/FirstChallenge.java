@@ -12,7 +12,7 @@ public class FirstChallenge {
      * This main can throw an ArithmeticException!!!
      * @param args
      */
-    public static void main(String[] args) {
+/*    public static void main(String[] args) {
         FirstChallenge firstChallenge = new FirstChallenge();
         double result = 0;
         try {
@@ -25,5 +25,5 @@ public class FirstChallenge {
         }
 
         System.out.println(result);
-    }
+    }*/
 }
