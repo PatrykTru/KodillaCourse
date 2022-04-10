@@ -25,9 +25,9 @@ public class MovieStore {
         booksTitlesWithTranslations.put("AV", avengersTranslations);
         booksTitlesWithTranslations.put("FL", flashTranslations);
 
-        booksTitlesWithTranslations.entrySet().stream()
-                .forEach(s -> s.getValue().stream()
-                .forEach(System.out::println));
+        booksTitlesWithTranslations
+                .forEach((key, value) -> value
+                .forEach(o -> System.out.print(o + " ! ")));
 
         return booksTitlesWithTranslations;
     }
