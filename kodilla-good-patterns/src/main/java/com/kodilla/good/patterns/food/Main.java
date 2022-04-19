@@ -10,8 +10,10 @@ public class Main {
         HealthyShop healthyShop = new HealthyShop();
 
         extraFoodShop.process();
+        extraFoodShop.producerInfo(extraFoodShop);
         glutenFreeShop.process();
+        glutenFreeShop.producerInfo(glutenFreeShop);
         healthyShop.process();
-
+        healthyShop.producerInfo(healthyShop);
     }
 }

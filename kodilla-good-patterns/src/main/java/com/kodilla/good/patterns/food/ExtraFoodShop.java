@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class ExtraFoodShop extends Producer implements ProducerService{
+public class ExtraFoodShop extends Producer implements ProducerService , InformationService{
 
     Product eggs = new Product("Eggs" , 8.00,100);
     Product milk = new Product("Milk" , 3.00 ,20);
@@ -18,5 +18,10 @@ public class ExtraFoodShop extends Producer implements ProducerService{
     @Override
     public void process() {
         System.out.println("Sending invoice info and products to Delivery to ExtraFoodShop");
+    }
+
+    @Override
+    public void producerInfo(Producer producer) {
+        System.out.println(producer.toString());
     }
 }
